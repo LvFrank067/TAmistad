@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Para Mi Amiguita, Cami</title>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2NNE565F1E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2NNE565F1E');
+</script>
+    <link rel="icon" type="image/x-icon" href="img/icono.png">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Allura&family=Dancing+Script&family=Satisfy&family=Tangerine&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Orbitron:wght@700&family=Great+Vibes&family=Oswald&family=Parisienne&family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+        <div class="music-control">
+        <button class="music-btn" id="musicBtn" aria-label="Toggle music">
+            <svg id="playIcon" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"/>
+            </svg>
+            <svg id="pauseIcon" viewBox="0 0 24 24" style="display: none;">
+                <path d="M6 19h4V5H6zm8-14v14h4V5z"/>
+            </svg>
+        </button>
+        <div class="volume-control" id="volumeControl">
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5" aria-label="Volume control">
+        </div>
+    </div>
+    <audio id="backgroundMusic" loop preload="auto">
+        <source src="musica/WINTER BEAR - Taehyung (FMV) Sub español; Lyrics.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+    
+    <div class="parallax-bg"></div>
+    <div class="overlay-bg"></div>
+    <div class="main-container">
+        <h1 class="title">Para Mi Amiguita, Camii</h1>
+        <div class="intro glass-effect">
+            Amiguita, este día especial es para celebrar un año mas de nuestra amistada.
+             Esta sorpresa es para ti, porque eres mi mundo.       
+             </div>
+
+        <div class="quote-section glass-effect">
+            "Tú eres mi hogar, mi refugio, mi lugar seguro por siempre."
+        </div>
+
+       <div class="carousel">
+  <div class="image-container active">
+    <img src="img/rio.jpeg" alt="Amor como Iron Man">
+    <div class="carousel-caption">" Te Cuidare aunque estés lejos, como Blu a Jewel"</div>
+  </div>
+
+  <div class="image-container">
+    <img src="img/rio2.jpg" alt="Amor como Capitán América">
+    <div class="carousel-caption">"Contigo, hasta el carnaval más loco, como Nico y Pedro "</div>
+  </div>
+
+  <div class="image-container">
+    <img src="img/pin.jpeg" alt="Amor como Wanda y Vision">
+    <div class="carousel-caption">"Somos un desastre... pero juntos, como los Pingüinos de Madagasca"</div>
+  </div>
+
+  <div class="image-container">
+    <img src="img/spiderman.jpg" alt="Amor como Spiderman">
+    <div class="carousel-caption">"Tu eres mi camino y siempre seras mi camino."</div>
+  </div>
+
+  <div class="image-container">
+    <img src="img/aa.jpg" alt="Amor como Hulk">
+    <div class="carousel-caption">"Te creo cuando el mundo no lo hace, asi como Nick a Judy"</div>
+  </div>
+
+  <div class="image-container">
+    <img src="img/burro.jpeg" alt="Amor como Strange">
+    <div class="carousel-caption">"Te escucho, incluso cuando solo haces ruido, asi como burro a Shrek"</div>
+  </div>
+
+  <!-- Botones del carrusel -->
+  <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+  <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+</div>
+
+        <div class="divider"></div>
+
+        <button class="heart-btn" id="openLetterBtn"><span>Lee Mi Carta</span></button>
+
+        <div class="letter-overlay" id="letterOverlay">
+            <div class="letter-card">
+                <button class="close" id="closeLetterBtn">×</button>
+                <h2>💌 Carta para mi mejor amiguita 💌</h2>
+                <div class="typewriter-container" id="typewriterText">
+                                            <div class="line"><span class="text"></span><span class="cursor"></span></div>
+                                            <div class="line"><span class="text"></span><span class="cursor"></span></div>
+                                            <div class="line"><span class="text"></span><span class="cursor"></span></div>
+                                            <div class="line"><span class="text"></span><span class="cursor"></span></div>
+                                            <div class="line"><span class="text"></span><span class="cursor"></span></div>
+                                            <div class="line"><span class="text"></span><span class="cursor"></span></div>
+                                            <div class="line"><span class="text"></span><span class="cursor"></span></div>
+                                            <div class="line"><span class="text"></span><span class="cursor"></span></div>
+                                            <div class="line"><span class="text"></span><span class="cursor"></span></div>
+                                            <div class="line"><span class="text"></span><span class="cursor"></span></div>
+                                            <div class="line"><span class="text"></span><span class="cursor"></span></div>
+                                    </div>
+                <p class="signature">
+                    Con cariño y aprecio,
+                      Frank 💙               
+                  </p>
+            </div>
+        </div>
+
+        <div class="memory-section glass-effect fade-in-section">
+            <h2 class="section-title">Nuestros Recuerdos</h2>
+                            <div class="memory-item hover-effect">
+                    <h3>El Primer Encuentro</h3>
+                    <div class="date">22 de Julio, 2022</div>
+                    <p>Ese día, simplemente fue el comienzo de todo(casi me pegas :c).</p>
+                </div>
+                            <div class="memory-item hover-effect">
+                    <h3>Nuestro Dia mas Feliz</h3>
+                    <div class="date">No recuerdo la fecha</div>
+                    <p>La noche que casi terminamos en la comisaria todo por querer tomar</p>
+                </div>
+                            <div class="memory-item hover-effect">
+                    <h3>Nuestros recuerdos</h3>
+                    <div class="date">Son a diarios</div>
+                    <p>Cada momento que paso contigo son inolvidables,esos momentos contigo se quedan grabados para siempre.</p>
+                </div>
+                    </div>
+
+        <div class="time-since-birth glass-effect fade-in-section">
+            <div class="time-title">Tiempo Desde Que Nos Conocimos</div>
+            <div class="time-display" id="timeDisplay">030:17:23:32</div>
+            <div class="time-label">Días : Horas : Min : Seg</div>
+            <div class="personalized-message">🌹 Para ti, amiguita 🌹
+
+A veces no hacen falta grandes palabras para decir lo que se siente… solo algo honesto y del corazón.
+Y si te lo digo así, sin rodeos: me alegra mucho tenerte en mi vida.
+
+Gracias por cada sonrisa que me regalas, por escucharme sin juzgar, por esos momentos simples que se vuelven especiales solo porque tú estás ahí.
+Tú eres ese tipo de persona que deja huellas bonitas sin darse cuenta.
+
+No sé qué venga mañana, pero sí sé que hoy, y cada día que compartimos, me siento afortunado de llamarte mi amiga.
+Eres única, loca a veces, dulce siempre… y eso te hace increíble.
+
+💙 Nunca lo olvides: aquí estoy para ti. Siempre.
+
+Con cariño,
+Frank 😊</div>
+        </div>
+
+        <div class="future-plans glass-effect fade-in-section">
+            <h2 class="section-title">Nuestro Futuro</h2>
+            <p>Imagina los días que vendrán: viajes, risas, nuestra amistad que crece cada día. Contigo, todo es posible.</p>
+        </div>
+
+        <div class="love-meter glass-effect fade-in-section">
+            <h2>
+                Nuestra Amistad          </h2>
+            <div class="meter-container">
+                <div class="meter-fill"></div>
+            </div>
+            <div class="meter-text">100% Verdadero</div>
+        </div>
+
+        <div class="end-message glass-effect fade-in-section">
+            Hecho con cariño para la persona que ilumina mi mundo.            
+            <p class="signature">De Frank</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 Creado con
+            amor para Cami :3      
+           </p>
+    </div>
+
+    <script>
+        function createStars() {
+            const sky = document.querySelector('.overlay-bg');
+            for (let i = 0; i < 150; i++) {
+                const star = document.createElement('div');
+                star.className = 'particle';
+                star.style.left = `${Math.random() * 100}%`;
+                star.style.top = `${Math.random() * 100}%`;
+                star.style.animation = `fadeInUp ${Math.random() * 2 + 1}s infinite`;
+                star.style.animationDelay = `${Math.random() * 3}s`;
+                sky.appendChild(star);
+            }
+        }
+
+        createStars();
+
+        const carouselContainers = document.querySelectorAll('.carousel .image-container');
+        let currentImage = 0;
+        let isTransitioning = false;
+
+        function showImage(index, direction = 'next') {
+            if (isTransitioning) return;
+            isTransitioning = true;
+
+            const currentContainer = carouselContainers[currentImage];
+            const nextContainer = carouselContainers[index];
+
+            carouselContainers.forEach(container => {
+                container.classList.remove('active');
+                container.style.opacity = '0';
+                container.style.transform = direction === 'next' ? 'translateX(100%)' : 'translateX(-100%)';
+            });
+
+            nextContainer.classList.add('active');
+            nextContainer.style.opacity = '1';
+            nextContainer.style.transform = 'translateX(0)';
+
+            setTimeout(() => {
+                isTransitioning = false;
+            }, 800);
+
+            currentImage = index;
+        }
+
+        document.querySelector('.next-btn').addEventListener('click', () => {
+            const nextIndex = (currentImage + 1) % carouselContainers.length;
+            showImage(nextIndex, 'next');
+        });
+
+        document.querySelector('.prev-btn').addEventListener('click', () => {
+            const prevIndex = (currentImage - 1 + carouselContainers.length) % carouselContainers.length;
+            showImage(prevIndex, 'prev');
+        });
+
+        setInterval(() => {
+            const nextIndex = (currentImage + 1) % carouselContainers.length;
+            showImage(nextIndex, 'next');
+        }, 6000);
+
+        let typewriterTimeout = null;
+
+        function typeLine(lineElement, text, speed = 20, onDone) {
+            const textSpan = lineElement.querySelector('.text');
+            const cursor = lineElement.querySelector('.cursor');
+            textSpan.textContent = '';
+            lineElement.classList.add('active');
+            let index = 0;
+
+            function typeChar() {
+                if (index < text.length) {
+                    textSpan.textContent += text.charAt(index);
+                    index++;
+                    typewriterTimeout = setTimeout(typeChar, speed);
+                } else {
+                    cursor.style.display = 'none';
+                    if (onDone) onDone();
+                }
+            }
+
+            cursor.style.display = 'inline-block';
+            typeChar();
+        }
+
+         function openLetterModal() {
+            const overlay = document.getElementById('letterOverlay');
+            const typewriterText = document.getElementById('typewriterText');
+            const lines = typewriterText.querySelectorAll('.line');
+            const texts = ["De: Frank \ud83d\udc99 Para: Mi personita especial","Hola amiguita,","No s\u00e9 exactamente c\u00f3mo empezar esta carta, porque hay tantas cosas que quiero decirte\u2026 pero intentar\u00e9 que cada palabra te abrace como lo har\u00eda si estuviera a tu lado.","Gracias por estar. Por quedarte. Por escucharme incluso cuando no s\u00e9 c\u00f3mo explicarme. Gracias por re\u00edrte de mis tonter\u00edas y, a veces, por hacerlas conmigo. Por apoyarme sin necesidad de prometer nada, por darme confianza en los d\u00edas que me siento menos, por hacerme sentir que puedo ser yo sin miedo.","A veces pienso que no te digo lo suficiente lo importante que eres para m\u00ed. Y aunque no siempre lo exprese, cr\u00e9eme que valoro much\u00edsimo tenerte en mi vida. Eres de esas personas que no se reemplazan, que se recuerdan con cari\u00f1o incluso en silencio, que brillan con su forma de ser \u00fanica.","Me encanta compartir momentos contigo, desde los m\u00e1s simples hasta los m\u00e1s locos. Porque t\u00fa y yo, aunque no seamos perfectos, tenemos esa conexi\u00f3n especial que no se ve, pero se siente. A veces ni necesitamos hablar mucho\u2026 solo estar.","Gracias por hacerme re\u00edr, por ser mi refugio cuando todo parece pesado, y por ser esa personita que me hace pensar: \u201cqu\u00e9 suerte la m\u00eda de tenerla como amiga\u201d. Si alg\u00fan d\u00eda dudas de ti, acu\u00e9rdate de esto: yo creo en ti, siempre.","Te quiero mucho, amiguita. Y no, no es exageraci\u00f3n\u2026 es cari\u00f1o sincero del bueno.","Siempre contar\u00e1s conmigo, hoy y en lo que venga.","Con cari\u00f1o y aprecio,","Frank \ud83d\udc99"].filter(text => text.trim() !== '');
+
+            if (typewriterTimeout) {
+                clearTimeout(typewriterTimeout);
+                typewriterTimeout = null;
+            }
+
+            lines.forEach(line => {
+                const textSpan = line.querySelector('.text');
+                const cursor = line.querySelector('.cursor');
+                textSpan.textContent = '';
+                cursor.style.display = 'none';
+                line.classList.remove('active');
+            });
+
+            overlay.style.display = 'flex';
+
+            function typeNextLine(index) {
+                if (index < lines.length && index < texts.length && texts[index]) {
+                    typeLine(lines[index], texts[index], 20, () => {
+                        typeNextLine(index + 1);
+                    });
+                } else {
+                    lines.forEach(line => line.querySelector('.cursor').style.display = 'none');
+                }
+            }
+
+            typeNextLine(0);
+        }
+
+        document.getElementById('openLetterBtn').addEventListener('click', openLetterModal);
+
+        document.getElementById('closeLetterBtn').addEventListener('click', () => {
+            const overlay = document.getElementById('letterOverlay');
+            const typewriterText = document.getElementById('typewriterText');
+            const lines = typewriterText.querySelectorAll('.line');
+
+            if (typewriterTimeout) {
+                clearTimeout(typewriterTimeout);
+                typewriterTimeout = null;
+            }
+
+            lines.forEach(line => {
+                const textSpan = line.querySelector('.text');
+                const cursor = line.querySelector('.cursor');
+                textSpan.textContent = '';
+                cursor.style.display = 'none';
+            });
+
+            overlay.style.display = 'none';
+        });
+
+        window.onclick = function(event) {
+            const overlay = document.getElementById('letterOverlay');
+            if (event.target === overlay) {
+                const typewriterText = document.getElementById('typewriterText');
+                const lines = typewriterText.querySelectorAll('.line');
+
+                if (typewriterTimeout) {
+                    clearTimeout(typewriterTimeout);
+                    typewriterTimeout = null;
+                }
+
+                lines.forEach(line => {
+                    const textSpan = line.querySelector('.text');
+                    const cursor = line.querySelector('.cursor');
+                    textSpan.textContent = '';
+                    cursor.style.display = 'none';
+                });
+
+                overlay.style.display = 'none';
+            }
+        };
+
+        const fadeSections = document.querySelectorAll('.fade-in-section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    if (entry.target.classList.contains('love-meter')) {
+                        const meterFill = entry.target.querySelector('.meter-fill');
+                        setTimeout(() => {
+                            meterFill.classList.add('active');
+                        }, 500);
+                    }
+                }
+            });
+        }, { threshold: 0.1 });
+
+        fadeSections.forEach(section => observer.observe(section));
+
+        document.addEventListener('click', (e) => {
+            for (let i = 0; i < 10; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = `${e.clientX}px`;
+                particle.style.top = `${e.clientY}px`;
+                particle.style.animation = `zoomIn 0.8s ease-out`;
+                document.body.appendChild(particle);
+                setTimeout(() => particle.remove(), 800);
+            }
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', (e) => {
+                e.preventDefault();
+                document.querySelector(anchor.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+      const timeDisplay = document.getElementById('timeDisplay');
+
+function updateTimeSinceMay10() {
+    const startDate = new Date('2022-08-22T00:00:00'); // Fecha de inicio
+    const now = new Date();
+    let diff = Math.floor((now - startDate) / 1000); // diferencia en segundos
+
+    if (diff < 0) diff = 0;
+
+    const days = Math.floor(diff / (3600 * 24));
+    const hours = Math.floor((diff % (3600 * 24)) / 3600);
+    const minutes = Math.floor((diff % 3600) / 60);
+    const seconds = diff % 60;
+
+    timeDisplay.textContent = `${String(days).padStart(3, '0')}:${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+}
+
+setInterval(updateTimeSinceMay10, 1000);
+updateTimeSinceMay10();
+
+
+        function toggleMusic() {
+            const music = document.getElementById('backgroundMusic');
+            const playIcon = document.getElementById('playIcon');
+            const pauseIcon = document.getElementById('pauseIcon');
+            if (!music) {
+                console.error('No music element found');
+                return;
+            }
+            if (music.paused) {
+                music.play().then(() => {
+                    console.log('Music playing at:', music.currentTime);
+                    playIcon.style.display = 'none';
+                    pauseIcon.style.display = 'block';
+                }).catch(error => {
+                    console.error('Error playing audio:', error.message);
+                });
+            } else {
+                music.pause();
+                console.log('Music paused at:', music.currentTime);
+                playIcon.style.display = 'block';
+                pauseIcon.style.display = 'none';
+            }
+        }
+
+                window.onload = function() {
+            const music = document.getElementById('backgroundMusic');
+            const musicBtn = document.getElementById('musicBtn');
+            const playIcon = document.getElementById('playIcon');
+            const pauseIcon = document.getElementById('pauseIcon');
+            const volumeSlider = document.getElementById('volumeSlider');
+            const volumeControl = document.getElementById('volumeControl');
+
+            if (!music || !musicBtn || !volumeSlider || !volumeControl) {
+                console.error('Music or control elements not found');
+                return;
+            }
+
+            music.volume = volumeSlider.value;
+
+            music.load();
+            music.currentTime = 0;
+            music.play().then(() => {
+                console.log('Autoplay successful at:', music.currentTime);
+                playIcon.style.display = 'none';
+                pauseIcon.style.display = 'block';
+            }).catch(error => {
+                console.warn('Autoplay blocked:', error.message);
+            });
+
+            musicBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                toggleMusic();
+                if (!volumeControl.classList.contains('visible')) {
+                    volumeControl.classList.add('visible');
+                    clearTimeout(hideVolumeTimeout);
+                    hideVolumeTimeout = setTimeout(() => volumeControl.classList.remove('visible'), 2000);
+                } else {
+                    volumeControl.classList.remove('visible');
+                }
+            });
+
+            let hideVolumeTimeout = null;
+            volumeSlider.addEventListener('input', (e) => {
+                music.volume = e.target.value;
+                console.log('Volume set to:', music.volume);
+                clearTimeout(hideVolumeTimeout);
+                volumeControl.classList.add('visible');
+            });
+
+            volumeSlider.addEventListener('change', () => {
+                hideVolumeTimeout = setTimeout(() => volumeControl.classList.remove('visible'), 2000);
+            });
+
+            volumeControl.addEventListener('mouseenter', () => clearTimeout(hideVolumeTimeout));
+            volumeControl.addEventListener('mouseleave', () => {
+                hideVolumeTimeout = setTimeout(() => volumeControl.classList.remove('visible'), 2000);
+            });
+
+            volumeSlider.addEventListener('touchstart', (e) => {
+                e.stopPropagation();
+                clearTimeout(hideVolumeTimeout);
+            });
+            volumeSlider.addEventListener('touchend', () => {
+                hideVolumeTimeout = setTimeout(() => volumeControl.classList.remove('visible'), 2000);
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!volumeControl.contains(e.target) && !musicBtn.contains(e.target)) {
+                    volumeControl.classList.remove('visible');
+                    clearTimeout(hideVolumeTimeout);
+                }
+            });
+
+            music.addEventListener('loadeddata', () => console.log('Audio data loaded'));
+            music.addEventListener('error', (e) => console.error('Audio error:', e.message));
+            music.addEventListener('play', () => console.log('Music play event'));
+            music.addEventListener('pause', () => console.log('Music pause event'));
+        };
+            </script>
+</body>
+</html>
+
